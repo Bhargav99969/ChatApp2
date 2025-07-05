@@ -10,8 +10,8 @@ export const genrateToken = async (userid, res) => {
   });
  res.cookie("token", token, {
   httpOnly: true,
-  secure: false, // true for production
-  sameSite: "Lax", // or "None" + secure: true
+  secure: true, // true for production
+  sameSite: "None", // or "None" + secure: true
 });
 
   return token;
