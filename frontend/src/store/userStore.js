@@ -70,7 +70,7 @@ connectsocket:async()=>{
     const {user}=get();
     if(!user || !user._id || get().socket?.connected) return;
 
-    const newSocket = io("http://localhost:3000",{
+    const newSocket = io("https://chatapp2backend.onrender.com",{
         query:{
             userId:user?._id,
            
