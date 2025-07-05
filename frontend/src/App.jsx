@@ -38,13 +38,13 @@ function App() {
 return (
     <>
     <div className="h-9 w-full justify-end flex mx-4 px-7 mt-1">
-    <img src="/public/2.jpg" className="absolute w-full  h-full opacity-5 z-[-10]"></img>
+    <img src="/2.jpg" className="absolute w-full  h-full opacity-5 z-[-10]"></img>
       {/* <img src="/public/4.jpg"/> */}
       
        <button
       onClick={()=>logout()} >
         <img className="h-8"
-        src="/public/5.webp"/>
+        src="/5.webp"/>
       </button>:
      </div>
       <Routes>
