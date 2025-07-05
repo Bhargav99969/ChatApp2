@@ -45,8 +45,10 @@ login:async(data)=>{
     set({ isLogged: true });
     try {
         const res= await axiosInstance.post("/auth/login",data)
+        console.log("50")
         set({user:res.data})
         toast.success("Welcome Back");
+        console.log("34")
         get().connectsocket();
     } catch (error) {
           toast.error("error");
