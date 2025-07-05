@@ -8,7 +8,7 @@ const server = http.createServer(app);
 
 const io = new Server(server,{
     cors:{
-     origin: ["http://localhost:5173","https://chatapp2-ca9y.onrender.com"],
+     origin: "https://chatapp2-ca9y.onrender.com",
     methods: ["GET", "POST"],
     credentials: true,
     },
